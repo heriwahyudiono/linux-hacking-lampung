@@ -1,6 +1,7 @@
 import os
 import pyfiglet
 from colorama import init, Fore
+from network_scanner import scan_network
 
 def clear_screen():
     os.system('clear' if os.name == 'posix' else 'cls')
@@ -19,11 +20,6 @@ def print_menu():
     print(Fore.CYAN + "[2] Exploit Vulnerability")
     print(Fore.CYAN + "[3] Crack Password")
     print(Fore.CYAN + "[4] Exit" + Fore.RESET)
-
-def scan_network():
-    # Logika untuk melakukan scan jaringan
-    print(Fore.GREEN + "Scanning network..." + Fore.RESET)
-    # Kode Anda di sini
 
 def exploit_vulnerability():
     # Logika untuk mengeksploitasi kerentanan
