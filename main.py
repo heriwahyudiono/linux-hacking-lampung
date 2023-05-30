@@ -15,24 +15,24 @@ def print_banner():
     print("\n")
 
 def print_menu():
-    print("[1] Scan Network")
-    print("[2] Exploit Vulnerability")
-    print("[3] Crack Password")
-    print("[4] Exit")
+    print(Fore.CYAN + "[1] Scan Network")
+    print(Fore.CYAN + "[2] Exploit Vulnerability")
+    print(Fore.CYAN + "[3] Crack Password")
+    print(Fore.CYAN + "[4] Exit" + Fore.RESET)
 
 def scan_network():
     # Logika untuk melakukan scan jaringan
-    print("Scanning network...")
+    print(Fore.GREEN + "Scanning network..." + Fore.RESET)
     # Kode Anda di sini
 
 def exploit_vulnerability():
     # Logika untuk mengeksploitasi kerentanan
-    print("Exploiting vulnerability...")
+    print(Fore.GREEN + "Exploiting vulnerability..." + Fore.RESET)
     # Kode Anda di sini
 
 def crack_password():
     # Logika untuk melakukan cracking password
-    print("Cracking password...")
+    print(Fore.GREEN + "Cracking password..." + Fore.RESET)
     # Kode Anda di sini
 
 def main():
@@ -41,7 +41,7 @@ def main():
     print_menu()
 
     while True:
-        choice = input("\nEnter your choice: ")
+        choice = input(Fore.YELLOW + "\nEnter your choice: " + Fore.RESET)
 
         if choice == '1':
             scan_network()
@@ -53,13 +53,13 @@ def main():
             crack_password()
 
         elif choice == '4':
-            print("Exiting...")
+            print(Fore.RED + "Exiting..." + Fore.RESET)
             break
 
         else:
-            print("Invalid choice. Please try again.")
+            print(Fore.RED + "Invalid choice. Please try again." + Fore.RESET)
 
-        input("Press Enter to continue...")
+        input(Fore.MAGENTA + "Press Enter to continue..." + Fore.RESET)
         clear_screen()
         print_banner()
         print_menu()
